@@ -1,0 +1,213 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 10;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins',sans-serif;
+}
+
+body{
+    font-family: verdana;
+    background-color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    text-align: right;
+    height: 100%;
+}
+
+.bgindex{
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bgcategories{
+    width: 100%;
+    height: 150vh;
+    background-image: url("assets/background_test.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bodydiv{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin-top: 150px;
+    padding-left: 70px;
+}
+
+header{
+    padding: 10px;
+}
+
+header li{
+    display: inline;
+    padding-left: 25px;
+}
+
+header li a{
+    position: relative;
+    color: #7977A2;
+    text-decoration: none;
+    padding-right: 50px;
+    transition: 0.3s;
+    font-size: large;
+}
+
+header li a:after{
+    content: "";
+    position: absolute;
+    background-color: #FFBC00;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+/*header li a:hover{
+   
+}*/
+
+header li a:hover:after{
+    width: 70%;
+}
+
+header ul #logo{
+    height: 40px;
+    width: auto;
+    float: left;
+    position: relative;
+    padding-left: 60px;
+    top: -5px;
+}
+
+h1{
+    position: relative;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+p{
+    position: relative;
+    text-align: left;
+}
+
+.btn{
+    margin-top: 30px;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background: #A261AF;
+    color: #ffffff;
+    cursor: pointer;
+    width: 380px;
+}
+
+.btn:active{
+    background: #4B2E2E;
+}
+
+.logo{
+    position: relative;
+    width: 50px;
+    padding-top: 30px;
+    margin-left: 55px;
+}
+
+.category_title{
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 330px 80px;
+    grid-template-areas: "image" "stats";
+
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    width: 300px;
+    margin-left: 160px;
+    margin-top: 30px;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card-image{
+    grid-area: image;
+    background: url("assets/tomb_raider.svg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position-y:-25px;
+    background-repeat: no-repeat;
+}
+
+.card-text{
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text .date{
+    color: #747474;
+    text-align: left;
+    margin-top: -15px;
+}
+
+.card-text .summary{
+    text-align: left;
+    margin-top: -8px;
+    font-size: 13px;
+}
+
+.card-stats{
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #64CA31;
+}
+
+.card-stats .stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding:10px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}

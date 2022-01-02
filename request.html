@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mellow Studio</title>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="request_styles.css"> 
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="bgcategories" style="height: 100vh;">
+            <header>
+                <ul style="margin-top: 16px;">
+                 <img src="assets/MellowStudio.png" alt="Logo" id="logo">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="discover.html">Discover</a></li>
+                 <li><a href="request.html">Request</a></li>
+                </ul>
+            </header>
+                <div class="container" style="margin-left: 25%; margin-top: 10%;">
+                  <div class="title">Suggest a Video Game to Review</div>
+                  <div class="content">
+                    <form action="#" id="form" method="GET">
+                      <div class="user-details">
+                        <div class="input-box">
+                          <span class="details" style="text-align: left;">What should we call you?</span>
+                          <input id="namevalidation" placeholder="Enter your name" >
+                        </div>
+                        <div class="input-box">
+                          <span class="details" style="text-align: left;">Game Title</span>
+                          <input id="gametitle" placeholder="Enter title of the game" >
+                        </div>
+                        <div class="input-box">
+                          <span class="details" style="text-align: left;">Game created by?</span>
+                          <input id="gamecreator" placeholder="Enter name of the creator">
+                        </div>
+                        <div class="input-box">
+                          <span class="details" style="text-align: left;">Email</span>
+                          <input id="email" placeholder="Enter your email">
+                        </div>
+                      </div>
+                      <div class="button">
+                        <input type="submit" value="Submit">
+                      </div>
+                    </form>
+                    <div id="error" style="text-align: left; color: red;"></div>
+                  </div>
+                </div>
+        </div>
+    </body>
+</html>
